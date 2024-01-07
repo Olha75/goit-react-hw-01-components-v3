@@ -1,6 +1,6 @@
 import css from './statistics.module.css';
-// import PropTypes from 'prop-types';
 import getRandomHexColor from 'helpers/randomColor';
+import PropTypes from 'prop-types';
 
 const Statistics = ({ title, items }) => {
   const elements = items.map(({ id, label, percentage }) => (
@@ -31,15 +31,13 @@ Statistics.defaultProps = {
 
 export default Statistics;
 
-// export { Statistics } from 'index';
-
-// Statistics.propTypes = {
-//   title: PropTypes.string,
-//   items: PropTypes.arrayOf(
-//     PropTypes.shape({
-//       id: PropTypes.string,
-//       label: PropTypes.string,
-//       percentage: PropTypes.number,
-//     })
-//   ),
-// };
+Statistics.propTypes = {
+  title: PropTypes.string,
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string,
+      label: PropTypes.string,
+      percentage: PropTypes.number,
+    })
+  ),
+};

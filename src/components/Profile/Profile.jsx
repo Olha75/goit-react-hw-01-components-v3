@@ -1,5 +1,5 @@
 import css from './profile.module.css';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 export const Profile = ({ stats, avatar, location, tag, username }) => {
   return (
@@ -23,7 +23,7 @@ export const Profile = ({ stats, avatar, location, tag, username }) => {
         </li>
         <li className={css.statsItem}>
           <span className={css.label}>Likes</span>
-          <span class={css.quantity}>{stats.likes}</span>
+          <span className={css.quantity}>{stats.likes}</span>
         </li>
       </ul>
     </section>
@@ -36,16 +36,14 @@ export default Profile;
 //   items: [],
 // };
 
-// Profile.propTypes = {
-//   username: PropTypes.string,
-//   tag: PropTypes.string,
-//   location: PropTypes.string,
-//   avatar: PropTypes.string,
-//   stats: PropTypes.arrayOf(
-//     PropTypes.shape({
-//       followers: PropTypes.number,
-//       views: PropTypes.number,
-//       likes: PropTypes.number,
-//     })
-//   ),
-// };
+Profile.propTypes = {
+  username: PropTypes.string,
+  tag: PropTypes.string,
+  location: PropTypes.string,
+  avatar: PropTypes.string,
+  stats: PropTypes.shape({
+    followers: PropTypes.number,
+    views: PropTypes.number,
+    likes: PropTypes.number,
+  }),
+};
