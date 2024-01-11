@@ -1,0 +1,57 @@
+.list {
+  padding-top: 30px;
+  justify-content: center;
+  align-items: center;
+  /* gap: 10px; */
+}
+/* .isOnline {
+  width: 100px;
+  background-color: green;
+  border-radius: 50%;
+  
+} */
+
+.name {
+  font-size: 30px;
+  /* margin: auto; */
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.online {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(26, 182, 182);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+.offline {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(230, 32, 32);
+  border-radius: 50%;
+}
+
+.imgFriends {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+}
+
+.friends {
+  display: flex;
+  flex-wrap: wrap;
+  width: 500px;
+  background-color: beige;
+  margin-bottom: 20px;
+  padding: 20px;
+  gap: 10px;
+  align-items: center;
+  /* font-size: 16px; */
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px 0 rgba(0, 0, 139, 0.2);
+}

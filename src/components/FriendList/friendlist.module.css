@@ -4,42 +4,6 @@
   align-items: center;
   /* gap: 10px; */
 }
-/* .isOnline {
-  width: 100px;
-  background-color: green;
-  border-radius: 50%;
-  
-} */
-
-.name {
-  font-size: 30px;
-  /* margin: auto; */
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  margin-left: 10px;
-}
-
-.online {
-  width: 30px;
-  height: 30px;
-  background-color: rgb(26, 182, 182);
-  border-radius: 50%;
-  justify-content: center;
-  align-items: center;
-}
-.offline {
-  width: 30px;
-  height: 30px;
-  background-color: rgb(230, 32, 32);
-  border-radius: 50%;
-}
-
-.imgFriends {
-  width: 100px;
-  height: 100px;
-  border-radius: 5px;
-}
 
 .friends {
   display: flex;
